@@ -10,7 +10,7 @@ function Def (html) {
                 {html.children}
             </body>
         </html>
-    )
-}
+    );
+};
 
 module.exports = Def
