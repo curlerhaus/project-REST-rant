@@ -6,7 +6,7 @@ app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
 
-app.use('/places', require('./contollers/places'))
+app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -20,3 +20,5 @@ app.listen(process.env.PORT, function () {
     console.log(`Server is running on port ${process.env.PORT}\n
     http://localhost:${process.env.PORT}`);
 })
+
+
