@@ -20,7 +20,7 @@ function index (data) {
         <Def>
             <main>
                 <h1>Places to Rant or Rave About</h1>
-                <div className='row'>
+                <div className='row text-center'>
                     {placesFormatted}
                 </div>
             </main>
