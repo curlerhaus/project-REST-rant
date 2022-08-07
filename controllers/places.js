@@ -32,7 +32,7 @@ router.get('/new', (req, res) => {
 router.get('/:id', (req, res) => {
   db.Place.findById(req.params.id)
   .then(place => {
-    res.render('place/show', { place })
+    res.render('places/show', { place })
   })
   .catch(err => {
     console.log('err', err)
@@ -52,9 +52,17 @@ router.get('/:id/edit', (req, res) => {
   res.send('GET edit form stub')
 })
 
-router.post('/:id/rant', (req, res) => {
-  res.send('GET /places/:id/rant stub')
+router.post('/', (req, res) => {
+  db.Place.create(req.body)
+  .then(() => {
+      res.redirect('/places')
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
+
 
 router.delete('/:id/rant/:rantId', (req, res) => {
     res.send('GET /places/:id/rant/:rantId stub')
