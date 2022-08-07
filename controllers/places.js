@@ -58,12 +58,8 @@ router.post('/', (req, res) => {
       res.redirect('/places')
   })
   .catch(err => {
-    if (err && err.name == 'ValidationError') {
-      let message = 'Validation Error: '
-      //Todo" Find all validation errors
-    } else {
+      console.log('err', err)
       res.render('error404')
-    }
   })
 })
 
