@@ -1,6 +1,7 @@
 const React = require('react')
 const Def = require('../default')
 
+
 //pasted from class page
 function show (data) {
     return (
