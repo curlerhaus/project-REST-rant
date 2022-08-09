@@ -49,3 +49,6 @@ Wireframes
 Notes
 
 https://github.com/Ssegura09/rest-rant
+
+
+https://github.com/HackerUSA-CE/API-Project-REST-Rant

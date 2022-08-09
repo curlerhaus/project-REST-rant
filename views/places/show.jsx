@@ -59,6 +59,43 @@ function show (data) {
                  {comments}
                  {/* <p>No comments yet.</p> */}
              </div>
+             <div>
+                <form action={`/places/${data.place.id}/comment`} method="POST">
+                    <label htmlFor="author">Author</label>
+                    <input type="text"
+                            className='form-control'
+                            id='author'
+                            name='author'/>
+                    <label htmlFor="content">Content</label>
+                    <input type="text"
+                            className='form-control'
+                            id='content'
+                            name='content'/>
+                    <div>
+                      <div>
+                        <label htmlFor="starRating">Star Rating</label>
+                        <input type = "range" class='range' 
+                              min='0' 
+                              max='10' 
+                              value='5' 
+                              id='starRating' 
+                              name='starRating' />
+                      </div>
+                      <div>
+                      <label htmlFor="rant">Rant</label>
+                        <input type="checkbox" 
+                            id='rant' 
+                            name='rant' />
+                      </div>
+                    </div>
+
+                        <div>
+                        <input type="submit"
+                                className='btn btn-primary'
+                                value='Submit Comment' />
+                        </div>
+                </form> 
+             </div>
              
   </main>
     </Def>
