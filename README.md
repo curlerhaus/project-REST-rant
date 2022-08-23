@@ -1,6 +1,10 @@
 # Project REST-Rant
 
-[To Google](http://www.google.com)
+Open MongoDB
+eval $(/opt/homebrew/bin/brew shellenv)
+
+brew services start mongodb-community@6.0
+
 
 REST-Rant is an app where users can review restaurants.
 

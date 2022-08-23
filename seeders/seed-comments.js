@@ -7,10 +7,10 @@ async function seed() {
 
     // Create a fake sample comment.
     let comment = await db.Comment.create({
-        author: 'Famished Fran',
+        author: 'Famished Fran1',
         rant: false,
-        stars: 5.0,
-        content: 'Wow, simply amazing! Highly recommended!'
+        stars: 3.0,
+        content: ' Not great. Wow, simply amazing! Highly recommended!'
     })
 
     // Add that comment to the place's comment array.
